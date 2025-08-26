@@ -1,0 +1,41 @@
+<!-- 5번 : CSS 스타일 - 내부 스타일-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 내부 스타일</title>
+    <style>
+      /* css 주석 */
+      /* 태그 선택자 { 속성 : 속성명; } */
+      h1 {
+        color: yellow;
+        background-color: black;
+      }
+      /* id 선택자 #id명 { 속성 : 속성명; } */
+      #span-id {
+        color: darkorange;
+      }
+
+      /* class 선택자 .클래스명 { 속성 : 속성명; } */
+      .p-class {
+        background-color: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ID와 Class속성</h1>
+    <!-- span{span요소$}*2 -->
+    <span class="span-class" style="color: red; background-color: beige"
+      >span요소1</span
+    >
+    <span id="span-id">span요소2</span>
+    <!-- div{div요소$}*2 -->
+    <div class="p-class" style="color: red; background-color: beige">
+      div요소1
+    </div>
+    <!-- 인라인 스타일과 내부 스타일로 css가 겹칠경우 인라인 스타일의 우선순위가 높으므로 인라인 스타일에서 적용한 css가 실행된다.
+    따라서 skyblue가 아닌 beige 색상으로 배경색이 들어간다 -->
+    <div id="div-id" class="p-class">div요소2</div>
+  </body>
+</html>

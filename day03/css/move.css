@@ -1,0 +1,32 @@
+body {
+  background-color: gainsboro;
+  padding: 50px;
+}
+
+.box {
+  width: 100px; /* 가로 너비 */
+  height: 100px; /* 세로 높이 */
+  background-color: tomato; /* 배경색 */
+  color: white; /* 글자색 */
+  font-size: 50px; /* 글자 크기 */
+  text-align: center; /* 가로 중앙 정렬 */
+  line-height: 100px; /* 세로 중앙 정렬 */
+  border-radius: 10px; /* 모서리 둥글게 */
+
+  position: relative; /* 자신의 원래 위치를 기준으로 left 이동 가능 */
+  animation: moveBox 5s infinite alternate;
+  /* animation : 이름 지속시간 반복횟수 방향 */
+  /* - moveBox : 아래에서 작성한 @keyframes의 이름
+     - 5s : 5초동안 애니메이션
+     - infinite : 무한 반복
+     - alternate : 왕복 이동(끝나면 반대 방향으로) */
+}
+
+@keyframes moveBox {
+  from {
+    left: 0;
+  } /* 시작 : 원래 위치 */
+  to {
+    left: 500px;
+  } /* 끝 : 오른쪽으로 500px 이동 */
+}

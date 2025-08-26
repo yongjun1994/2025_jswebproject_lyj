@@ -1,0 +1,36 @@
+/* 6번 : CSS 스타일 - 외부 스타일 */
+
+* {
+  margin: 0px; /*바깥여백(테두리와 다른 요소사이)*/
+  padding: 0px; /*안쪽여백(테두리와 내용 사이)*/
+}
+
+h1 {
+  color: darkcyan;
+  text-align: center;
+}
+
+span {
+  color: orange;
+  /* text-align : center; */
+  /* 인라인 요소인 span 태그는 컨텐츠(내용)의 크기만큼만 공간을 차지하기 때문에
+    정렬이 불가능하다
+  */
+}
+
+#phone-number {
+  font-size: 25px;
+  background-color: yellow;
+  color: red;
+}
+
+/* ul{
+  display: flex;
+} */
+
+.my-list {
+  list-style-type: none;
+  font-weight: bold;
+  background-color: lightgreen;
+  text-align: center;
+}

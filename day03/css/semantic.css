@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* width와 height 계산이 편리함 */
+}
+
+a {
+  text-decoration: none; /* 링크에 밑줄없애기 */
+}
+
+header,
+footer {
+  background-color: lightgray;
+  /* height: 100px; */
+  padding: 16px 12px;
+}
+
+nav {
+  background-color: lightpink;
+}
+
+main {
+  background-color: lightcyan;
+  /* height: 700px; */
+  display: flex;
+  flex-wrap: wrap; /* 화면이 좁아지면 자동으로 줄바꿈 */
+  gap: 24px; /* 사이 간격 */
+  padding: 24px 12px;
+}
+
+section {
+  background-color: lightgreen;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 16px;
+  flex: 1 1 560px;
+}
+
+.menu-sub {
+  display: flex;
+  list-style-type: none;
+  gap: 20px; /* 간격 */
+  font-size: 18px;
+}
+
+#posts {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.posts {
+  min-height: 160px;
+}
+
+.div-post {
+  border: 1px solid black;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+#notice {
+  display: flex;
+  flex-direction: column;
+}
+
+#notice-items {
+  display: flex;
+  gap: 12px;
+}
+
+.notice {
+  flex: 1;
+  border: 2px solid red;
+  border-radius: 6px;
+  padding: 12px;
+  background: white;
+  min-height: 200px;
+}
+
+@media (max-width: 900px) {
+  #notice-item {
+    flex-wrap: wrap;
+  }
+  .notice {
+    flex: 1 1 calc(50% - 12px);
+    /* 1 (grow) : 남는 공간이 있으면 늘어나라
+      1 (shrink) : 공간이 부족하면 줄어들어라
+      clac(50% - 12px) : 기본 크기를 부모의 절반 - 12px 잡아라
+      => 한 줄에 2개 들어가게하고 gap: 12px으로 생기는 여백을 계산해서 빼준 것
+      */
+  }
+}
+
+@media (max-width: 560px) {
+  .notice {
+    flex: 1 1 100%;
+    /*
+      560px이하가 되면 1열로
+    */
+  }
+}

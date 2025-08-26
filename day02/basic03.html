@@ -1,0 +1,82 @@
+<!-- 3번 : input태그(입력태그)와 form, label태그 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>사용자 정보 입력받기</title>
+  </head>
+  <body>
+    <h1>사용자 정보 입력</h1>
+    <form action="" method="get">
+      <fieldset>
+        <legend>사용자 정보</legend>
+        <label for="name">이름</label>
+        <input type="text" id="name" value="홍길동" readonly /><br />
+
+        <label for="age">나이</label>
+        <input type="number" id="age" value="10" autofocus /><br />
+
+        <label
+          >아이디
+          <input
+            type="text"
+            pattern="[a-z0-9]{5,20}"
+            placeholder="영어 소문자와 숫자를 포함" /></label
+        ><br />
+
+        <label>비밀번호 <input type="password" required /></label><br />
+      </fieldset>
+      <fieldset>
+        <legend>취미</legend>
+        <label for="hobby1">독서</label>
+        <input type="radio" id="hobby1" name="hobby" checked />
+        <label for="hobby2">여행</label>
+        <input type="radio" id="hobby2" name="hobby" />
+        <label for="hobby3">게임</label>
+        <input type="radio" id="hobby3" name="hobby" />
+      </fieldset>
+
+      <fieldset>
+        <legend>과일선택</legend>
+        <label for="apple">사과</label>
+        <input type="checkbox" id="apple" name="fruit" />
+        <label for="banana">바나나</label>
+        <input type="checkbox" id="banana" name="fruit" />
+        <label for="orange">오렌지</label>
+        <input type="checkbox" id="orange" name="fruit" checked />
+      </fieldset>
+
+      <fieldset>
+        <legend>추가정보</legend>
+        <label for="date">생년월일</label>
+        <input type="date" id="date" /><br />
+
+        <label for="country">국가 선택</label>
+        <select id="country" name="country">
+          <option value="etc">국가선택</option>
+          <option value="kr" selected>한국</option>
+          <option value="us">미국</option>
+          <option value="jp">일본</option>
+        </select>
+
+        <label for="file">프로필 사진 업로드</label>
+        <input type="file" id="file" />
+      </fieldset>
+      <fieldset>
+        <legend>추가 의견</legend>
+        <textarea
+          cols="50"
+          rows="5"
+          placeholder="여기에 의견을 작성하세요"
+        ></textarea>
+      </fieldset>
+
+      <input type="submit" value="서버로 전송" />
+      <input type="reset" value="리셋" />
+      <button type="submit">전송submit</button>
+      <button type="button">버튼button</button>
+      <button type="reset">리셋reset</button>
+    </form>
+  </body>
+</html>

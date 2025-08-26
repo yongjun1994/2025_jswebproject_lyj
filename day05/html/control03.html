@@ -1,0 +1,30 @@
+<!-- 3번 : do ~ while, prompt() : 입력 대화상자 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let password = "1234";
+      let input = ""; //사용자 입력값
+
+      do {
+        input = prompt("비밀번호를 입력하세요 : ");
+        if (input !== password) {
+          console.log("비밀번호가 틀렸습니다");
+        }
+      } while (input !== password);
+
+      //비밀번호가 일치하면 화면에 메시지 출력
+      document.write("<h1>로그인 성공!!</h1>");
+
+      //두번째 기능 : 이름 입력받아 화면과 콘솔에 출력하기
+      let name = prompt("이름을 입력하세요 : ");
+      console.log(name, typeof name);
+      document.write("<h1>" + name + "</h1>");
+    </script>
+  </body>
+</html>

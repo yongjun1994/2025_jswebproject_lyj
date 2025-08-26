@@ -1,0 +1,45 @@
+<!-- 7번 : 시맨틱태그 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>시맨틱 태그 연습</title>
+  <link rel="stylesheet" href="./../css/semantic.css">
+</head>
+<body>
+  <header>
+    <h1>My Page</h1>
+    <!-- nav.menu>ul.menu-sub>(li>a)*3 -->
+    <nav class="menu">
+      <ul class="menu-sub">
+        <li><a href="">홈</a></li>
+        <li><a href="">게시글</a></li>
+        <li><a href="">공지사항</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-container">
+    <section id="posts">
+      <h2>최신 게시글 3개</h2>
+      <div class="div-post posts">게시글1</div>
+      <div class="div-post posts">게시글2</div>
+      <div class="div-post posts">게시글3</div>
+    </section>
+    <section id="notice">
+      <h2>최신 공지사항 3개</h2>
+      <div id="notice-items">
+        <div class="div-post notice">공지사항1</div>
+        <div class="div-post notice">공지사항2</div>
+        <div class="div-post notice">공지사항3</div>
+      </div>   
+    </section>
+  </main>
+  <footer>
+    <div>
+      <small>2025 My Page</small>
+      <a>개인정보처리방침</a>
+    </div>
+  </footer>
+</body>
+</html>

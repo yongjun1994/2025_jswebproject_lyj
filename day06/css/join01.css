@@ -1,0 +1,86 @@
+/* 기본 폰트 및 배경 설정 */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  padding: 20px;
+  margin: 0;
+}
+
+/* 회원가입 폼 박스 스타일 */
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 제목 스타일 */
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* 라벨 */
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* 입력 필드 */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 4px rgba(76, 175, 80, 0.4);
+}
+
+/* 메시지 영역 */
+.message {
+  font-size: 14px;
+  font-weight: bold;
+  height: 18px;
+  margin-bottom: 10px;
+  transition: color 0.2s ease;
+}
+
+.message.error {
+  color: red;
+}
+
+.message.success {
+  color: green;
+}
+
+/* 버튼 스타일 */
+button {
+  margin-top: 25px;
+  width: 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}

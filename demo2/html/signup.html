@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>회원가입</title>
+  <link rel="stylesheet" href="../css/signup.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <div class="signup-container">
+    <h2>회원가입</h2>
+    <form id="signupForm">
+      <label for="userId">아이디:</label>
+      <input type="text" id="userId" name="userId" placeholder="아이디를 입력하세요" required>
+
+      <label for="nickname">닉네임:</label>
+      <div class="nickname-check">
+        <input type="text" id="nickname" name="nickname" placeholder="닉네임을 입력하세요" required>
+        <button type="button" id="checkNickname">중복확인</button>
+      </div>
+
+      <label for="name">이름:</label>
+      <input type="text" id="name" name="name" placeholder="이름을 입력하세요" required>
+
+      <label for="phone">핸드폰 번호:</label>
+      <input type="tel" id="phone" name="phone" placeholder="010-1234-5678" required>
+
+      <label for="address">주소:</label>
+      <div class="address-search">
+        <input type="text" id="zipcode" name="zipcode" placeholder="우편번호" readonly>
+        <button type="button" id="searchAddress">주소검색</button>
+      </div>
+      <input type="text" id="address" name="address" placeholder="주소를 입력하세요" required>
+
+      <div class="password-wrapper">
+        <label for="newPassword">비밀번호:</label>
+        <input type="password" id="newPassword" name="newPassword" placeholder="비밀번호를 입력하세요" required>
+        <span class="eye-icon" id="toggleNewPassword">👁️</span>
+        <small id="passwordMessage"></small>
+      </div>
+
+      <div class="password-wrapper">
+        <label for="confirmPassword">비밀번호 확인:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="비밀번호를 다시 입력하세요" required>
+        <span class="eye-icon" id="toggleConfirmPassword">👁️</span>
+        <small id="confirmMessage"></small>
+      </div>
+
+      <fieldset class="terms">
+        <legend>약관 동의</legend>
+        <label><input type="checkbox" id="agreeAll"> 전체 동의</label><br>
+        <label><input type="checkbox" class="term"> 개인정보 처리방침 동의</label><br>
+        <label><input type="checkbox" class="term"> 서비스 이용약관 동의</label><br>
+        <label><input type="checkbox" class="term"> 정보 수집 및 이용 동의</label>
+      </fieldset>
+
+      <button type="submit">가입하기</button>
+    </form>
+  </div>
+  <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+  <script src="../js/signup.js"></script>
+</body>
+</html>

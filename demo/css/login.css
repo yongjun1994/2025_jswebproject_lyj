@@ -1,0 +1,74 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #e6f7ff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+  }
+  
+  .login-container {
+	background-color: white;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	width: 300px;
+  }
+  
+  form {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  label {
+	margin-top: 10px;
+	margin-bottom: 5px;
+  }
+  
+  input {
+	padding: 8px 35px 8px 8px; /* 오른쪽 아이콘 공간 확보 */
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	width: 100%;
+	box-sizing: border-box;
+  }
+  
+  .password-wrapper {
+	position: relative;
+  }
+  
+  .password-wrapper input {
+	width: 100%;
+	padding: 10px 40px 10px 10px; /* 오른쪽 아이콘 공간 확보 */
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+	font-size: 16px;
+  }
+  
+  .eye-icon {
+	position: absolute;
+	right: 12px;
+	top: 65%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	font-size: 18px;
+	color: #666;
+	pointer-events: auto;
+  }
+	
+  button {
+	margin-top: 15px;
+	padding: 10px;
+	background-color: #3399ff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  button:hover {
+	background-color: #007acc;
+  }
+  
